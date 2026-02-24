@@ -1,0 +1,100 @@
+/* Two Kingdoms Color Palette */
+:root {
+  --primary-purple: #5D3FD3;
+  --accent-yellow: #FFD700;
+  --secondary-petal: #A79AFF;
+  --neutral-cream: #FFF9E3;
+  --text-indigo: #1E1B32;
+}
+
+body {
+  background-color: #FFFFFF; /* Pure blank white background */
+  color: var(--text-indigo);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+.brand-title {
+  color: var(--primary-purple);
+  font-family: 'Baskerville Old Face', 'Georgia', serif;
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--text-indigo);
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.form-container {
+  background-color: var(--neutral-cream);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--secondary-petal);
+  box-shadow: 0 4px 15px rgba(93, 63, 211, 0.1);
+  max-width: 450px;
+  width: 90%;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+input[type="email"] {
+  width: 85%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--secondary-petal);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--text-indigo);
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 5px var(--secondary-petal);
+}
+
+button {
+  background-color: var(--accent-yellow);
+  color: var(--text-indigo);
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #e6c200; /* Slightly darker shade of the yellow */
+  transform: translateY(-2px);
+}
+
+#form-message {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-purple);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .brand-title {
+    font-size: 2.5rem; /* Shrinks the title slightly for phones */
+  }
+  .form-container {
+    padding: 2rem 1rem; /* Reduces padding to give the text more breathing room */
+  }
+}
